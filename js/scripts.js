@@ -1,29 +1,14 @@
-// Business logic:
+$(document).ready(function() {
+  $("#blanks form").submit(function(event) {
+    var blanks = ["name", "hello", "would-you-rather", "adventurous", "noun"];
 
-var add = function(number1, number2)  {
-  return number1 + number2;
-};
+    blanks.forEach(function(blank) {
+      var userInput = $("input." + blank).val();
+      $("." + blank).text(userInput).val();
+    });
 
-var subtract = function(number1, number2) {
-  return number1 - number2;
-};
+    $("#story").show();
 
-var multiply = function(number1, number2)  {
-  return number1 * number2;
-};
-
-var divide = function(number1, number2) {
-  return number1 / number2;
-};
-
-// Everything below this line is user interface logic:
-
-$(document).ready(function()  {
-  $("form#add").submit(function(event)  {
     event.preventDefault();
-    var number1 = parseInt($("#add1").val());
-    var number2 = parseInt($("#add2").val());
-    var result = add(number1, number2);
-    $("#output").text(result);
   });
 });
