@@ -13,72 +13,79 @@
       <h4>Stuck? We'll help you figure out where to go on your vacation!</h4>
       <h4>We suggest the <strong>moon!</strong></h4>
       <br>
+
       <div id="blanks">
         <form>
           <div class="form-group">
             <label for="name">Name</label>
-            <input id="person1" class="form-control" type="text">
+            <input id="name" class="form-control" type="text">
           </div>
 
-          <label for="hello">How would you like to be greeted?</label>
-          <select class=form-control id="how-hello">
-            <option value=" "> </option>
-            <option value="hello">Hello</option>
-            <option value="hola">Hola</option>
-            <option value="ciao">Ciao</option>
-            <option value="nihao">Ni hao</option>
-            <option value="konnichiwa">Kon'nichiwa</option>
-            <option value="kamusta">Kamusta</option>
-          </select>
           <br>
-          <br>
-          <label for="would-you-rather">What you rather...</label>
-
-          <select class=form-control id="would-you-rather">
-            <option value=" "> </option>
-            <option value="cuisine">Try the local food scene</option>
-            <option value="landmarks">Visit landmarks and monuments</option>
-            <option value="hike">Backpack, hike, and more</option>
-            <option value="snow">Snowboard or ski</option>
-            <option value="swim">Surf, swim, and get sun tan</option>
-            <option value="shop">Go shopping</option>
-          </select>
-
-          <br>
-          <br>
-          <label for="adventurous">On a scale of 1-5, how adventurous are you?</label>
-          <select class=form-control id="adventurous">
-            <option value=" "> </option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="not-adventurous">I'm not adventurous</option>
-          </select>
-          <br>
+          <div class="form-group">
+            <label for="how-hello">How would you like to be greeted?</label>
+            <select class=form-control id="how-hello">
+              <option value=" "> </option>
+              <option value="hello">Hello</option>
+              <option value="hola">Hola</option>
+              <option value="ciao">Ciao</option>
+              <option value="nihao">Ni hao</option>
+              <option value="konnichiwa">Kon'nichiwa</option>
+              <option value="kamusta">Kamusta</option>
+            </select>
+          </div>
           <br>
 
           <div class="form-group">
-            <label for="In ">Type: Quam bene vivas refert non quam diu</label>
+            <label for="what-you-would-do">What would you do?</label>
+            <select class=form-control id="what-you-would-do">
+              <option value=" "> </option>
+              <option value="cuisine">Try the local food scene</option>
+              <option value="landmarks">Visit landmarks and monuments</option>
+              <option value="hike">Backpack, hike, and more</option>
+              <option value="snow">Snowboard or ski</option>
+              <option value="swim">Surf, swim, and get a sun tan</option>
+              <option value="shop">Go shopping</option>
+            </select>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label for="adventurous">On a scale of 1-5, how adventurous are you?</label>
+            <select class=form-control id="adventurous">
+              <option value=" "> </option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="not-adventurous">I'm not adventurous</option>
+            </select>
+          </div>
+          <br>
+
+          <div class="form-group">
+            <label for="latin">Type: Quam bene vivas refert non quam diu - Find out what this means!</label>
             <input id="latin" class="form-control" type="text">
           </div>
           <br>
-          <br>
+
           <button type="submit" class="btn">I'm ready for my next adventure!</button>
         </form>
       </div>
+      <br>
+      <br>
 
-      <div id="vacation">
+      <div id="final-vacation">
         <div class="well">
-        <br>
-        <br>
-        <h2>Pack your bags!</h2>
-        <p>You have such amazing taste, <span class="name"></span>! Based on your preferences, we highly suggest your next vacation to be <span class="hello"></span></p>
-        <p>Thank you for your time and we can't wait to see pictures of <span class="would-you-rather"></span>!</p>
-        <h4>Quam bene vivas refert non quam di - “It is how well you live that matters, not how long.”</h4>
+          <h2>Pack your bags!</h2>
+          <p>You have such amazing taste, <span class="name"></span>! Based on your preferences, we foresee your next vacation to be <span class="how-hello"></span></p>
+          <p>Thank you for your time and we can't wait to see pictures of <span class="what-you-would-do"></span>!</p>
+          <p>Oh by the way</p>
+          <h4>Quam bene vivas refert non quam di - It is how well you live that matters, not how long. </h4>
         </div>
       </div>
+      
     </div>
   </body>
 </html>
